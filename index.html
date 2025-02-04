@@ -7,24 +7,25 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <h1 class="heading">
+    <div class="game-rules">
         <img src="assets/images/game-rules.png" alt="logo">
-    </h1>
-
-    
-    <div class="scoreboard">
-        <p class="userScores">
-            Player 0 : 0 Computer
-        </p>
     </div>
-    <div>
+    <h1>
+        <div>
         <p>Choose your hand sign</p>
-    </div>
+        </div>
+    </h1>
     <div class="game-area">
-        <button class="btn">✊</button>
-        <button class="btn">🤚</button>
-        <button class="btn">🤞</button>
-        <p class="cpu_response_text">  </p>
+        <button onclick="playGame('rock')">👊</button>
+        <button onclick="playGame('paper')">✋</button>
+        <button onclick="playGame('scissors')">✌</button>
+        </div>
+
+        <div class="scoreDisplay">Player Score:
+            <span id="playerScoreDisplay">0</span>
+        </div>
+        <div class="scoreDisplay">Computer Score:
+            <span id="computerScoreDisplay">0</span>
         </div>
     </div>
     <script src="assets/js/script.js"></script>
