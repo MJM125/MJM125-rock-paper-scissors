@@ -6,7 +6,7 @@ const playerScoreDisplay = document.getElementById("playerScoreDisplay");
 const computerScoreDisplay = document.getElementById("computerScoreDisplay");
 let playerScore = 0;
 let computerScore = 0;
-let playgame = document.getElementById();
+
 
 function playGame(playerChoice){
 
@@ -15,7 +15,7 @@ function playGame(playerChoice){
     let result ="";
 
     if(playerChoice === computerChoice){
-        result = "Its a draw";
+        result = "Its a draw";S
     }
     else{
         switch(playerChoice){
@@ -23,26 +23,26 @@ function playGame(playerChoice){
                 (computerChoice === "scissors") ? "You Win" : "You Lose";
                 break;
             case "paper":
-                (computerChoice === "scissors") ? "You Win" : "You Lose";
+                (computerChoice === "rock") ? "You Win" : "You Lose";
                 break;
             case "scissors":
-                (computerChoice === "scissors") ? "You Win" : "You Lose";
+                (computerChoice === "paper") ? "You Win" : "You Lose";
                 break;
         }
     }
 
-    playerDisplay.textContent = `Player: ${playerChoice}`;
+    playerDisplay.textContent = `PLAYER: ${playerChoice}`;
     computerDisplay.textContent = `Computer: ${computerChoice}`;
     resultDisplay.textContent = result;
 
     switch(result){
         case "You Win":
-            playerscore++;
+            playerScore++;
             playerScoreDisplay.textContent = playerscore;
             break;
         case "You Lose":
-            computerscore++;
-            playerScoreDisplay.textContent = computerrscore;
+            computerScore++;
+            computerScoreDisplay.textContent = computerrscore;
             break;
     }
 }

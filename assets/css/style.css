@@ -10,27 +10,26 @@ body {
 .game-rules {
     width: 150px;
     height: 150px;
-    length: 150px;S
 }
 
 h1 {
     font-size:3.5rem;
-    color: darkblue;
+    color: black;
 }
 
-.choices {
-    margin: bottom 30px;
+.game-area {
+    margin: 30px;
 }
 
-.choices button {
+.game-area button {
     font-size: 9rem;
     min-width: 160px;
-    margin: 5 15px;
+    margin: 15px;
     border-radius: 200px;
-    background-color: lightblue (200, 100%, 50%)
+    background-color: lightblue
 }
 #playerDisplay, #computerDisplay {
-    font-size: 3rem;
+    font-size: 5rem;
 }
 
 #resultDisplay {
